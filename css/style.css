@@ -1,48 +1,9 @@
 /* CSS */
-/* Большие экраны 
-.navigation {
-    display: flex;
-    flex-flow: row wrap;
-    /* Это выровняет элементы по конечной части линии на главной оси 
-    justify-content: flex-end;
-  }*/
-  
-  /* Средние экраны 
-  @media all and (max-width: 800px) {
-    .navigation {
-      /* На экранах среднего размера мы центрируем элементы, равномерно распределяя пустое пространство вокруг элементов 
-      justify-content: space-around;
-    }
-  }*/
-  
-  /* Маленькие экраны 
-  @media all and (max-width: 500px) {
-    .navigation {
-      /* На маленьких экранах мы больше не используем направление строки, а используем столбец 
-      flex-direction: column;
-    }
-  }*/
-
-/*  html {
-    background-image: url(../images/Screenshot_11.png); 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-background-color: #333; 
-}*/
-
   
 .container {
  /*   display: -webkit-flex; */
- /*    display: flex;
-    flex-direction: column;
-    
-    flex-wrap: wrap;*/
-
+   display: flex;
+   flex-direction: column;
    background-color: Black;
 }
 
@@ -53,11 +14,16 @@ background-color: #333;
     background-image: url(../images/Screenshot_12.png);
 }
 .Page6 {
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+
     background-image: url(../images/phone.jpg);
 }
 
 .Page_no_pict {
     height: 100vh;
+    
     background-color: black; 
 /*    flex-direction: column; */
 }
@@ -93,54 +59,20 @@ flex-direction: column; */
     padding-top: 20%; 
     width: 70%;
     height: 70%;
-   
     z-index: 1;
 }
 .logo_descr {
     height: 100%;    
     font-size: 1.5vw;
-    line-height: 0vh; 
-
+    line-height: 0vw; 
     z-index: 1;
 }
 .logo_prebutton {
-    height: 5%;
+    height: 0.3vw;
 }
 .logo_button {
-    height: 40%;
-    width: 25%;
-    
-    line-height: 1vh; 
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-
-    text-align: center;
-    margin: 2vh 40vh; 
-    padding: 2vh 6vh 1vh 6vh;
-
-    /*margin-bottom: 10vh;*/
-    font-size: 1.4vw;
-    z-index: 1;
+    z-index: 1; 
 }
-
-/*.Menu {
-    display: flex;
-    flex-grow:1;
-    flex-direction: row;
- line 
-    border: 1px solid #FFFFFF;
-    background-color: black; */
-/* */
-}
-
-/*.menu_elements {
-    display: flex;
-    justify-content: space-around;
-
-    flex-grow: 8;
-    margin-right: 5%;
-    margin-left: 5%;
-}*/
 
 .logo_lang {
    display: flex;
@@ -153,31 +85,52 @@ flex-direction: column; */
 .Services {
     display: flex;
     flex-direction: row; 
-    padding: 4vh 4vh; 
+    align-content: center;
+    /* margin-top: 4%;  */
+    /* padding: 3%;  */
 }
 
 .Cases {
     display: flex;
     flex-direction: row;
+
+    height: 100vh;
+    margin: 10% 5%;
+/* align-content:center;
+
+justify-content: center; */
+    /* font-size: 1.4vw; */
+    /* inline-size: 2; */
+    border: 2px solid red;
 }
-.cases_left {
-    display: flex;
-    flex-grow:1;
-    width: 50%;
+.Cases a{
+    font-size: 170%;
+    /* font-size: 1.7em; */
+
+    border: 2px solid green;
 
 }
-.cases_right {
-    display: flex;
-    flex-grow:1;
-    width: 50%;
-}
+.cases_video {
+    /* display: flex; */
+    /* flex-direction: row; */
+    border: 2px solid orange;
 
+    /* flex-grow:1;
+    width: 50%; */
+    /* justify-content: center; */
+}
+.Partners {
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+    margin: 1% ; 
+
+}
 .Partners_center {
     display: flex;
 /*   */
     flex-direction: row;
     justify-content: space-between;
-  /*   align-content: space-between;  evenly*/
     flex-wrap: wrap;
     margin: 3% 0; 
     padding: 2% 5%;
@@ -216,14 +169,28 @@ flex-direction: column; */
 .column {
     float: left;
     width: 50%;
-    padding: 5em 7em;
-    min-height: 70vh;
+    /* padding: 5% 7% ; */
+    margin: 5% 4% 1% 4% ;
+
+    /* min-height: 70vh; */
+ justify-content:center ;
+ align-content: center;
 /*    position: relative; */
+text-align: left;
 }
+.cases_evg {
+    
+    background-image: url(../images/Rectangle6.svg); 
+    margin-left: -2%;
+    padding: 2%;
+    width: 60vh;
+    height: 40vh;
+}
+
 .column_blogers {
     float: left;
     /* width: 50%; */
-    font-size: 0.8em ;
+    font-size: 1.8vh ;
 
     padding: 1em 1em; 
     column-count: 2;
@@ -237,14 +204,21 @@ flex-direction: column; */
 
 body {
 /*    width: 100%; height: 100%; */
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
+    font-size: 2vh ;
+
     letter-spacing: 0.2em; 
     color: white;
  /*    font-size: 14px; */
     background: #000 ; 
 }
+h1 { font-size: 6vh ; }
+h2 { font-size: 5vh ; }
+h3 { font-size: 4vh ; }
+h4 { font-size: 3vh ; }
 
 span {
     font-style: italic;
@@ -265,8 +239,7 @@ span::after {
 a {
     color: white; /* Цвет ссылок */
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
-
-    font-size: 1.3vw;
+/* font-size: 1.3vw; */
 
 /* Inside Auto Layout */
     flex: none;
@@ -276,7 +249,7 @@ a {
 
 /*Меню*/
 .navbar {
-    min-height: 40px;
+    min-height: 4vh;
   }
   
   .nav > li > a:focus {
@@ -288,22 +261,43 @@ a {
    /*  padding: .2em .75em;//отступы внутри*/
     text-decoration: none; /*//убрать подчеркивание ссылки*/
 
-    height: 40%;
-    width: 25%;
+    height: 40%*1vh*1vw;
+    width: 25%*1vh*1vw;
     
     line-height: 0vh; 
     border: 2px solid #fff;
     box-sizing: border-box;
 
     text-align: center;
-    margin: 2vh 40vh; 
+    /* margin: 2vh 40vh;  */
     padding: 2vh 6vh;
 
     margin-bottom: 25vh;
-    font-size: 1.4vw;
     }
     .button > a:focus {
         background: #fff;
+        font-weight: bold;
     }
+    
+    .link:hover {
+         color: black; /*Цвет посещённой ссылки */
+        /* background: #fff; */
+    }
+    .link:visited {
+        /*color: black; /*Цвет посещённой ссылки */
+        /* background: white; */
+   }
 
-    /* MAIL */
+    a:visited {
+        color: white; /*Цвет посещённой ссылки*/
+    } 
+    
+    .a:hover {
+        text-decoration: none; /* убираем подчеркивание */
+        /* font-weight: bold; */
+    }
+    .a1:hover {
+        color: white; /* Цвет ссылки при наведении на нее курсора мыши */  
+        text-decoration:none;
+        font-weight: bold;
+    }

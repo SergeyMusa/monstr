@@ -65,20 +65,25 @@ html.fp-enabled,
     width: 0;
     height: 0;
     border-style: solid;
-    margin-top: -38px;
+    /* margin-top: -38px; */
+    margin-top: -1.8vh;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
+    /* left: 15px; */
+    left: 1.5vh;
     width: 0;
-    border-width: 38.5px 34px 38.5px 0;
+    /* border-width: 38.5px 34px 38.5px 0; */
+    border-width: 3.8vh 3.4vh 3.8vh 0;
     border-color: transparent #fff transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
+    /* right: 15px;
+    border-width: 38.5px 0 38.5px 34px; */
+    right: 1.2vh;
+    border-width: 3.8vh 0 3.8vh 3.4vh ;
     border-color: transparent transparent transparent #fff;
 }
 .fp-scrollable {
@@ -106,8 +111,10 @@ html.fp-enabled,
 }
 #fp-nav.fp-right {
     right: 17px;
+    /* right: 1.1vh; */
 }
 #fp-nav.fp-left {
+    /* left: 1.1vh; */
     left: 17px;
 }
 .fp-slidesNav{
@@ -123,9 +130,13 @@ html.fp-enabled,
 }
 .fp-slidesNav.fp-bottom {
     bottom: 17px;
+    /* bottom: 1.4vh; */
+    
 }
 .fp-slidesNav.fp-top {
     top: 17px;
+    /* top: 1.2vh; */
+
 }
 #fp-nav ul,
 .fp-slidesNav ul {
@@ -138,6 +149,9 @@ html.fp-enabled,
     width: 14px;
     height: 13px;
     margin: 7px;
+    /* width: 1.6vh;
+    height: 1.5vh;
+    margin: 0.6vh; */
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -160,6 +174,10 @@ html.fp-enabled,
     height: 12px;
     width: 12px;
     margin: -6px 0 0 -6px;
+    /* height: 1.2vh;
+    width: 1.2vh;
+    margin: -0.6vh 0 0 -0.6vh; */
+    
     border-radius: 100%;
  }
 #fp-nav ul li a span,
@@ -189,10 +207,12 @@ html.fp-enabled,
     position: absolute;
     top: -2px;
     color: #fff;
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 1.5vh;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
     max-width: 220px;
+    /* max-width: 22vh; */
     overflow: hidden;
     display: block;
     opacity: 0;
@@ -207,10 +227,12 @@ html.fp-enabled,
     opacity: 1;
 }
 #fp-nav ul li .fp-tooltip.fp-right {
-    right: 20px;
+    /* right: 20px; */
+    right: 1.1vh;
 }
 #fp-nav ul li .fp-tooltip.fp-left {
-    left: 20px;
+    left: 1.1vh;
+    /* left: 20px; */
 }
 .fp-auto-height.fp-section,
 .fp-auto-height .fp-slide,
